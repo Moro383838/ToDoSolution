@@ -36,11 +36,11 @@ namespace NTierTodoApp.Business
                 task.IsComplete = true; 
         } 
  
-        // TODO:   فذح ةلاد ذيفنت ةمهملا 
-        public void DeleteTask(int id) 
-        { 
-            // TODO: ةقبط يف فذحلا ةلاد ءاعدتسا DataAccess 
-        } 
+       public void DeleteTask(int id)
+{
+    // استدعاء دالة الحذف في طبقة DataAccess
+    repository.Delete(id);
+}
     } 
 } 
  
